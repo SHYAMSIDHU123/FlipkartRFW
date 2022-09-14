@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220914 10:46:06.393" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220914 11:15:48.933" rpa="false" schemaversion="3">
 <suite id="s1" name="Test" source="D:\flipkart1\Test.robot">
 <test id="s1-t1" name="Working on flipkart" line="7">
 <kw name="Open Flipkart" library="keywords">
@@ -8,54 +8,54 @@
 <arg>${url}</arg>
 <arg>gc</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220914 10:46:06.723" level="INFO">Opening browser 'gc' to base url 'https://www.flipkart.com/'.</msg>
-<status status="PASS" starttime="20220914 10:46:06.723" endtime="20220914 10:46:12.683"/>
+<msg timestamp="20220914 11:15:49.203" level="INFO">Opening browser 'gc' to base url 'https://www.flipkart.com/'.</msg>
+<status status="PASS" starttime="20220914 11:15:49.203" endtime="20220914 11:16:00.750"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220914 10:46:12.683" endtime="20220914 10:46:12.838"/>
+<status status="PASS" starttime="20220914 11:16:00.751" endtime="20220914 11:16:00.913"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${close_button}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:12.840" level="INFO">Clicking element 'xpath=//*[@class ="_2KpZ6l _2doB4z"]'.</msg>
-<status status="PASS" starttime="20220914 10:46:12.838" endtime="20220914 10:46:13.053"/>
+<msg timestamp="20220914 11:16:00.913" level="INFO">Clicking element 'xpath=//*[@class ="_2KpZ6l _2doB4z"]'.</msg>
+<status status="PASS" starttime="20220914 11:16:00.913" endtime="20220914 11:16:01.044"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220914 10:46:18.053" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220914 10:46:13.053" endtime="20220914 10:46:18.053"/>
+<msg timestamp="20220914 11:16:06.050" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220914 11:16:01.044" endtime="20220914 11:16:06.050"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:06.723" endtime="20220914 10:46:18.053"/>
+<status status="PASS" starttime="20220914 11:15:49.202" endtime="20220914 11:16:06.050"/>
 </kw>
 <kw name="Go to ‘Electronics’ tab" library="keywords">
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>${electronics}</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20220914 10:46:18.054" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[2]'.</msg>
-<status status="PASS" starttime="20220914 10:46:18.054" endtime="20220914 10:46:18.353"/>
+<msg timestamp="20220914 11:16:06.052" level="INFO">Simulating Mouse Over on element 'xpath=//*[@id="container"]/div/div[2]/div/div/div[5]/a/div[2]'.</msg>
+<status status="PASS" starttime="20220914 11:16:06.051" endtime="20220914 11:16:06.354"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:18.054" endtime="20220914 10:46:18.353"/>
+<status status="PASS" starttime="20220914 11:16:06.051" endtime="20220914 11:16:06.354"/>
 </kw>
 <kw name="Search for any of your desired Mobile from ‘Mobiles’ section" library="keywords">
 <kw name="Get Element Count" library="SeleniumLibrary">
 <var>${audio}</var>
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a</arg>
 <doc>Returns the number of elements matching ``locator``.</doc>
-<msg timestamp="20220914 10:46:18.378" level="INFO">${audio} = 14</msg>
-<status status="PASS" starttime="20220914 10:46:18.354" endtime="20220914 10:46:18.378"/>
+<msg timestamp="20220914 11:16:06.375" level="INFO">${audio} = 14</msg>
+<status status="PASS" starttime="20220914 11:16:06.355" endtime="20220914 11:16:06.375"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${audio}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:18.378" endtime="20220914 10:46:18.379"/>
+<status status="PASS" starttime="20220914 11:16:06.375" endtime="20220914 11:16:06.376"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220914 10:46:21.381" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220914 10:46:18.379" endtime="20220914 10:46:21.381"/>
+<msg timestamp="20220914 11:16:09.379" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220914 11:16:06.376" endtime="20220914 11:16:09.379"/>
 </kw>
 <for flavor="IN RANGE">
 <var>${i}</var>
@@ -67,25 +67,25 @@
 <var>${list_names}</var>
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:21.422" level="INFO">${list_names} = Audio</msg>
-<status status="PASS" starttime="20220914 10:46:21.383" endtime="20220914 10:46:21.422"/>
+<msg timestamp="20220914 11:16:09.436" level="INFO">${list_names} = Audio</msg>
+<status status="PASS" starttime="20220914 11:16:09.381" endtime="20220914 11:16:09.436"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220914 10:46:21.422" endtime="20220914 10:46:21.713"/>
+<status status="PASS" starttime="20220914 11:16:09.437" endtime="20220914 11:16:09.721"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${list_names}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:21.713" endtime="20220914 10:46:21.713"/>
+<status status="PASS" starttime="20220914 11:16:09.721" endtime="20220914 11:16:09.722"/>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <arg>"${list_names}" == "${tablet}"</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220914 10:46:21.714" endtime="20220914 10:46:21.714"/>
+<status status="PASS" starttime="20220914 11:16:09.722" endtime="20220914 11:16:09.722"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:21.382" endtime="20220914 10:46:21.714"/>
+<status status="PASS" starttime="20220914 11:16:09.380" endtime="20220914 11:16:09.723"/>
 </iter>
 <iter>
 <var name="${i}">2</var>
@@ -93,25 +93,25 @@
 <var>${list_names}</var>
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:21.746" level="INFO">${list_names} = Electronics GST Store</msg>
-<status status="PASS" starttime="20220914 10:46:21.715" endtime="20220914 10:46:21.746"/>
+<msg timestamp="20220914 11:16:09.755" level="INFO">${list_names} = Electronics GST Store</msg>
+<status status="PASS" starttime="20220914 11:16:09.723" endtime="20220914 11:16:09.755"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220914 10:46:21.746" endtime="20220914 10:46:22.025"/>
+<status status="PASS" starttime="20220914 11:16:09.755" endtime="20220914 11:16:10.032"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${list_names}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:22.026" endtime="20220914 10:46:22.027"/>
+<status status="PASS" starttime="20220914 11:16:10.033" endtime="20220914 11:16:10.036"/>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <arg>"${list_names}" == "${tablet}"</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220914 10:46:22.027" endtime="20220914 10:46:22.028"/>
+<status status="PASS" starttime="20220914 11:16:10.037" endtime="20220914 11:16:10.039"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:21.714" endtime="20220914 10:46:22.029"/>
+<status status="PASS" starttime="20220914 11:16:09.723" endtime="20220914 11:16:10.039"/>
 </iter>
 <iter>
 <var name="${i}">3</var>
@@ -119,25 +119,25 @@
 <var>${list_names}</var>
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:22.065" level="INFO">${list_names} = Cameras &amp; Accessories</msg>
-<status status="PASS" starttime="20220914 10:46:22.029" endtime="20220914 10:46:22.065"/>
+<msg timestamp="20220914 11:16:10.088" level="INFO">${list_names} = Cameras &amp; Accessories</msg>
+<status status="PASS" starttime="20220914 11:16:10.040" endtime="20220914 11:16:10.088"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220914 10:46:22.065" endtime="20220914 10:46:22.339"/>
+<status status="PASS" starttime="20220914 11:16:10.088" endtime="20220914 11:16:10.357"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${list_names}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:22.339" endtime="20220914 10:46:22.342"/>
+<status status="PASS" starttime="20220914 11:16:10.357" endtime="20220914 11:16:10.358"/>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <arg>"${list_names}" == "${tablet}"</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220914 10:46:22.343" endtime="20220914 10:46:22.345"/>
+<status status="PASS" starttime="20220914 11:16:10.358" endtime="20220914 11:16:10.358"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:22.029" endtime="20220914 10:46:22.345"/>
+<status status="PASS" starttime="20220914 11:16:10.040" endtime="20220914 11:16:10.358"/>
 </iter>
 <iter>
 <var name="${i}">4</var>
@@ -145,25 +145,25 @@
 <var>${list_names}</var>
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:22.384" level="INFO">${list_names} = Computer Peripherals</msg>
-<status status="PASS" starttime="20220914 10:46:22.346" endtime="20220914 10:46:22.384"/>
+<msg timestamp="20220914 11:16:10.389" level="INFO">${list_names} = Computer Peripherals</msg>
+<status status="PASS" starttime="20220914 11:16:10.359" endtime="20220914 11:16:10.389"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220914 10:46:22.384" endtime="20220914 10:46:22.665"/>
+<status status="PASS" starttime="20220914 11:16:10.389" endtime="20220914 11:16:10.655"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${list_names}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:22.665" endtime="20220914 10:46:22.666"/>
+<status status="PASS" starttime="20220914 11:16:10.655" endtime="20220914 11:16:10.656"/>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <arg>"${list_names}" == "${tablet}"</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220914 10:46:22.666" endtime="20220914 10:46:22.667"/>
+<status status="PASS" starttime="20220914 11:16:10.656" endtime="20220914 11:16:10.657"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:22.345" endtime="20220914 10:46:22.667"/>
+<status status="PASS" starttime="20220914 11:16:10.359" endtime="20220914 11:16:10.657"/>
 </iter>
 <iter>
 <var name="${i}">5</var>
@@ -171,25 +171,25 @@
 <var>${list_names}</var>
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:22.698" level="INFO">${list_names} = Gaming</msg>
-<status status="PASS" starttime="20220914 10:46:22.667" endtime="20220914 10:46:22.698"/>
+<msg timestamp="20220914 11:16:10.690" level="INFO">${list_names} = Gaming</msg>
+<status status="PASS" starttime="20220914 11:16:10.657" endtime="20220914 11:16:10.690"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220914 10:46:22.698" endtime="20220914 10:46:22.978"/>
+<status status="PASS" starttime="20220914 11:16:10.690" endtime="20220914 11:16:10.967"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${list_names}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:22.978" endtime="20220914 10:46:22.979"/>
+<status status="PASS" starttime="20220914 11:16:10.967" endtime="20220914 11:16:10.968"/>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <arg>"${list_names}" == "${tablet}"</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220914 10:46:22.979" endtime="20220914 10:46:22.980"/>
+<status status="PASS" starttime="20220914 11:16:10.968" endtime="20220914 11:16:10.969"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:22.667" endtime="20220914 10:46:22.980"/>
+<status status="PASS" starttime="20220914 11:16:10.657" endtime="20220914 11:16:10.969"/>
 </iter>
 <iter>
 <var name="${i}">6</var>
@@ -197,25 +197,25 @@
 <var>${list_names}</var>
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:23.014" level="INFO">${list_names} = Health &amp; Personal Care</msg>
-<status status="PASS" starttime="20220914 10:46:22.980" endtime="20220914 10:46:23.014"/>
+<msg timestamp="20220914 11:16:11.005" level="INFO">${list_names} = Health &amp; Personal Care</msg>
+<status status="PASS" starttime="20220914 11:16:10.969" endtime="20220914 11:16:11.005"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220914 10:46:23.014" endtime="20220914 10:46:23.298"/>
+<status status="PASS" starttime="20220914 11:16:11.005" endtime="20220914 11:16:11.278"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${list_names}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:23.299" endtime="20220914 10:46:23.300"/>
+<status status="PASS" starttime="20220914 11:16:11.278" endtime="20220914 11:16:11.278"/>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <arg>"${list_names}" == "${tablet}"</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220914 10:46:23.300" endtime="20220914 10:46:23.302"/>
+<status status="PASS" starttime="20220914 11:16:11.278" endtime="20220914 11:16:11.279"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:22.980" endtime="20220914 10:46:23.302"/>
+<status status="PASS" starttime="20220914 11:16:10.969" endtime="20220914 11:16:11.279"/>
 </iter>
 <iter>
 <var name="${i}">7</var>
@@ -223,25 +223,25 @@
 <var>${list_names}</var>
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:23.336" level="INFO">${list_names} = Laptop Accessories</msg>
-<status status="PASS" starttime="20220914 10:46:23.302" endtime="20220914 10:46:23.336"/>
+<msg timestamp="20220914 11:16:11.306" level="INFO">${list_names} = Laptop Accessories</msg>
+<status status="PASS" starttime="20220914 11:16:11.279" endtime="20220914 11:16:11.306"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220914 10:46:23.336" endtime="20220914 10:46:23.616"/>
+<status status="PASS" starttime="20220914 11:16:11.306" endtime="20220914 11:16:11.577"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${list_names}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:23.617" endtime="20220914 10:46:23.617"/>
+<status status="PASS" starttime="20220914 11:16:11.578" endtime="20220914 11:16:11.579"/>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <arg>"${list_names}" == "${tablet}"</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220914 10:46:23.617" endtime="20220914 10:46:23.618"/>
+<status status="PASS" starttime="20220914 11:16:11.580" endtime="20220914 11:16:11.581"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:23.302" endtime="20220914 10:46:23.618"/>
+<status status="PASS" starttime="20220914 11:16:11.279" endtime="20220914 11:16:11.582"/>
 </iter>
 <iter>
 <var name="${i}">8</var>
@@ -249,25 +249,25 @@
 <var>${list_names}</var>
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:23.651" level="INFO">${list_names} = Laptop and Desktop</msg>
-<status status="PASS" starttime="20220914 10:46:23.618" endtime="20220914 10:46:23.651"/>
+<msg timestamp="20220914 11:16:11.624" level="INFO">${list_names} = Laptop and Desktop</msg>
+<status status="PASS" starttime="20220914 11:16:11.583" endtime="20220914 11:16:11.624"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220914 10:46:23.652" endtime="20220914 10:46:23.943"/>
+<status status="PASS" starttime="20220914 11:16:11.624" endtime="20220914 11:16:11.902"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${list_names}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:23.943" endtime="20220914 10:46:23.944"/>
+<status status="PASS" starttime="20220914 11:16:11.902" endtime="20220914 11:16:11.905"/>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <arg>"${list_names}" == "${tablet}"</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220914 10:46:23.944" endtime="20220914 10:46:23.946"/>
+<status status="PASS" starttime="20220914 11:16:11.906" endtime="20220914 11:16:11.908"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:23.618" endtime="20220914 10:46:23.946"/>
+<status status="PASS" starttime="20220914 11:16:11.582" endtime="20220914 11:16:11.908"/>
 </iter>
 <iter>
 <var name="${i}">9</var>
@@ -275,25 +275,25 @@
 <var>${list_names}</var>
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:23.985" level="INFO">${list_names} = MobileAccessory</msg>
-<status status="PASS" starttime="20220914 10:46:23.947" endtime="20220914 10:46:23.985"/>
+<msg timestamp="20220914 11:16:11.953" level="INFO">${list_names} = MobileAccessory</msg>
+<status status="PASS" starttime="20220914 11:16:11.909" endtime="20220914 11:16:11.953"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220914 10:46:23.985" endtime="20220914 10:46:24.256"/>
+<status status="PASS" starttime="20220914 11:16:11.953" endtime="20220914 11:16:12.244"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${list_names}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:24.256" endtime="20220914 10:46:24.257"/>
+<status status="PASS" starttime="20220914 11:16:12.244" endtime="20220914 11:16:12.245"/>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <arg>"${list_names}" == "${tablet}"</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220914 10:46:24.257" endtime="20220914 10:46:24.258"/>
+<status status="PASS" starttime="20220914 11:16:12.246" endtime="20220914 11:16:12.247"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:23.946" endtime="20220914 10:46:24.258"/>
+<status status="PASS" starttime="20220914 11:16:11.909" endtime="20220914 11:16:12.247"/>
 </iter>
 <iter>
 <var name="${i}">10</var>
@@ -301,25 +301,25 @@
 <var>${list_names}</var>
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:24.293" level="INFO">${list_names} = Powerbank</msg>
-<status status="PASS" starttime="20220914 10:46:24.258" endtime="20220914 10:46:24.293"/>
+<msg timestamp="20220914 11:16:12.285" level="INFO">${list_names} = Powerbank</msg>
+<status status="PASS" starttime="20220914 11:16:12.247" endtime="20220914 11:16:12.285"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220914 10:46:24.293" endtime="20220914 10:46:24.573"/>
+<status status="PASS" starttime="20220914 11:16:12.285" endtime="20220914 11:16:12.556"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${list_names}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:24.574" endtime="20220914 10:46:24.575"/>
+<status status="PASS" starttime="20220914 11:16:12.557" endtime="20220914 11:16:12.559"/>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <arg>"${list_names}" == "${tablet}"</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220914 10:46:24.576" endtime="20220914 10:46:24.579"/>
+<status status="PASS" starttime="20220914 11:16:12.560" endtime="20220914 11:16:12.562"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:24.258" endtime="20220914 10:46:24.579"/>
+<status status="PASS" starttime="20220914 11:16:12.247" endtime="20220914 11:16:12.563"/>
 </iter>
 <iter>
 <var name="${i}">11</var>
@@ -327,25 +327,25 @@
 <var>${list_names}</var>
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:24.636" level="INFO">${list_names} = Smart Home automation</msg>
-<status status="PASS" starttime="20220914 10:46:24.579" endtime="20220914 10:46:24.636"/>
+<msg timestamp="20220914 11:16:12.605" level="INFO">${list_names} = Smart Home automation</msg>
+<status status="PASS" starttime="20220914 11:16:12.563" endtime="20220914 11:16:12.605"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220914 10:46:24.636" endtime="20220914 10:46:24.917"/>
+<status status="PASS" starttime="20220914 11:16:12.605" endtime="20220914 11:16:12.880"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${list_names}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:24.918" endtime="20220914 10:46:24.919"/>
+<status status="PASS" starttime="20220914 11:16:12.880" endtime="20220914 11:16:12.881"/>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <arg>"${list_names}" == "${tablet}"</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220914 10:46:24.920" endtime="20220914 10:46:24.922"/>
+<status status="PASS" starttime="20220914 11:16:12.881" endtime="20220914 11:16:12.881"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:24.579" endtime="20220914 10:46:24.923"/>
+<status status="PASS" starttime="20220914 11:16:12.563" endtime="20220914 11:16:12.881"/>
 </iter>
 <iter>
 <var name="${i}">12</var>
@@ -353,25 +353,25 @@
 <var>${list_names}</var>
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:24.964" level="INFO">${list_names} = Smart Wearables</msg>
-<status status="PASS" starttime="20220914 10:46:24.924" endtime="20220914 10:46:24.964"/>
+<msg timestamp="20220914 11:16:12.906" level="INFO">${list_names} = Smart Wearables</msg>
+<status status="PASS" starttime="20220914 11:16:12.881" endtime="20220914 11:16:12.906"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220914 10:46:24.964" endtime="20220914 10:46:25.242"/>
+<status status="PASS" starttime="20220914 11:16:12.906" endtime="20220914 11:16:13.178"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${list_names}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:25.243" endtime="20220914 10:46:25.244"/>
+<status status="PASS" starttime="20220914 11:16:13.179" endtime="20220914 11:16:13.181"/>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <arg>"${list_names}" == "${tablet}"</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220914 10:46:25.245" endtime="20220914 10:46:25.246"/>
+<status status="PASS" starttime="20220914 11:16:13.182" endtime="20220914 11:16:13.185"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:24.923" endtime="20220914 10:46:25.246"/>
+<status status="PASS" starttime="20220914 11:16:12.881" endtime="20220914 11:16:13.185"/>
 </iter>
 <iter>
 <var name="${i}">13</var>
@@ -379,229 +379,229 @@
 <var>${list_names}</var>
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[${i}]</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:25.280" level="INFO">${list_names} = Storage</msg>
-<status status="PASS" starttime="20220914 10:46:25.247" endtime="20220914 10:46:25.280"/>
+<msg timestamp="20220914 11:16:13.226" level="INFO">${list_names} = Storage</msg>
+<status status="PASS" starttime="20220914 11:16:13.186" endtime="20220914 11:16:13.227"/>
 </kw>
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220914 10:46:25.280" endtime="20220914 10:46:25.559"/>
+<status status="PASS" starttime="20220914 11:16:13.227" endtime="20220914 11:16:13.506"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${list_names}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:25.560" endtime="20220914 10:46:25.561"/>
+<status status="PASS" starttime="20220914 11:16:13.507" endtime="20220914 11:16:13.509"/>
 </kw>
 <kw name="Exit For Loop If" library="BuiltIn">
 <arg>"${list_names}" == "${tablet}"</arg>
 <doc>Stops executing the enclosing FOR loop if the ``condition`` is true.</doc>
-<status status="PASS" starttime="20220914 10:46:25.561" endtime="20220914 10:46:25.562"/>
+<status status="PASS" starttime="20220914 11:16:13.510" endtime="20220914 11:16:13.512"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:25.246" endtime="20220914 10:46:25.562"/>
+<status status="PASS" starttime="20220914 11:16:13.185" endtime="20220914 11:16:13.512"/>
 </iter>
-<status status="PASS" starttime="20220914 10:46:21.381" endtime="20220914 10:46:25.562"/>
+<status status="PASS" starttime="20220914 11:16:09.379" endtime="20220914 11:16:13.513"/>
 </for>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20220914 10:46:25.563" level="INFO">Simulating Mouse Over on element 'xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]'.</msg>
-<status status="PASS" starttime="20220914 10:46:25.562" endtime="20220914 10:46:25.834"/>
+<msg timestamp="20220914 11:16:13.514" level="INFO">Simulating Mouse Over on element 'xpath=//*[@class="_3XS_gI _7qr1OC"]/a[14]'.</msg>
+<status status="PASS" starttime="20220914 11:16:13.513" endtime="20220914 11:16:13.798"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${Click Element}</var>
 <arg>${all}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:25.872" level="INFO">${Click Element} = Tablets Without Call Facility</msg>
-<status status="PASS" starttime="20220914 10:46:25.834" endtime="20220914 10:46:25.872"/>
+<msg timestamp="20220914 11:16:13.837" level="INFO">${Click Element} = Tablets Without Call Facility</msg>
+<status status="PASS" starttime="20220914 11:16:13.798" endtime="20220914 11:16:13.837"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${Click Element}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:25.872" endtime="20220914 10:46:25.873"/>
+<status status="PASS" starttime="20220914 11:16:13.838" endtime="20220914 11:16:13.838"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${all}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:25.873" level="INFO">Clicking element 'xpath=//*[@class="_3XS_gI"]/a[3]'.</msg>
-<status status="PASS" starttime="20220914 10:46:25.873" endtime="20220914 10:46:25.949"/>
+<msg timestamp="20220914 11:16:13.839" level="INFO">Clicking element 'xpath=//*[@class="_3XS_gI"]/a[3]'.</msg>
+<status status="PASS" starttime="20220914 11:16:13.838" endtime="20220914 11:16:13.911"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:18.353" endtime="20220914 10:46:25.949"/>
+<status status="PASS" starttime="20220914 11:16:06.354" endtime="20220914 11:16:13.911"/>
 </kw>
 <kw name="Do not select first 5 mobiles from the list.Try scrolling and search for the mobile" library="keywords">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${somewhere}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:25.951" level="INFO">Clicking element 'xpath=//*[@class="L0Z3Pu"]'.</msg>
-<status status="PASS" starttime="20220914 10:46:25.951" endtime="20220914 10:46:26.119"/>
+<msg timestamp="20220914 11:16:13.913" level="INFO">Clicking element 'xpath=//*[@class="L0Z3Pu"]'.</msg>
+<status status="PASS" starttime="20220914 11:16:13.913" endtime="20220914 11:16:14.115"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0,3000)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220914 10:46:26.120" level="INFO">Executing JavaScript:
+<msg timestamp="20220914 11:16:14.116" level="INFO">Executing JavaScript:
 window.scrollTo(0,3000)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220914 10:46:26.120" endtime="20220914 10:46:26.129"/>
+<status status="PASS" starttime="20220914 11:16:14.115" endtime="20220914 11:16:14.137"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220914 10:46:29.137" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220914 10:46:26.129" endtime="20220914 10:46:29.137"/>
+<msg timestamp="20220914 11:16:17.142" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220914 11:16:14.138" endtime="20220914 11:16:17.143"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0,1000)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220914 10:46:29.138" level="INFO">Executing JavaScript:
+<msg timestamp="20220914 11:16:17.143" level="INFO">Executing JavaScript:
 window.scrollTo(0,1000)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220914 10:46:29.137" endtime="20220914 10:46:29.152"/>
+<status status="PASS" starttime="20220914 11:16:17.143" endtime="20220914 11:16:17.160"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>3s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220914 10:46:32.154" level="INFO">Slept 3 seconds</msg>
-<status status="PASS" starttime="20220914 10:46:29.153" endtime="20220914 10:46:32.154"/>
+<msg timestamp="20220914 11:16:20.163" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220914 11:16:17.160" endtime="20220914 11:16:20.164"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0,1500)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220914 10:46:32.155" level="INFO">Executing JavaScript:
+<msg timestamp="20220914 11:16:20.167" level="INFO">Executing JavaScript:
 window.scrollTo(0,1500)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220914 10:46:32.154" endtime="20220914 10:46:32.165"/>
+<status status="PASS" starttime="20220914 11:16:20.165" endtime="20220914 11:16:20.196"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220914 10:46:42.169" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20220914 10:46:32.165" endtime="20220914 10:46:42.169"/>
+<msg timestamp="20220914 11:16:30.205" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220914 11:16:20.196" endtime="20220914 11:16:30.205"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:25.950" endtime="20220914 10:46:42.169"/>
+<status status="PASS" starttime="20220914 11:16:13.912" endtime="20220914 11:16:30.205"/>
 </kw>
 <kw name="go to that specific mobile’s details page." library="keywords">
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${lap}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:42.172" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/div[3]/div[1]/div[2]/div[7]/div/div/div/a/div[2]/div[1]/div[1]'.</msg>
-<status status="PASS" starttime="20220914 10:46:42.171" endtime="20220914 10:46:42.276"/>
+<msg timestamp="20220914 11:16:30.207" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/div[3]/div[1]/div[2]/div[7]/div/div/div/a/div[2]/div[1]/div[1]'.</msg>
+<status status="PASS" starttime="20220914 11:16:30.206" endtime="20220914 11:16:30.317"/>
 </kw>
 <kw name="Get Window Handles" library="SeleniumLibrary">
 <var>${handles}</var>
 <doc>Returns all child window handles of the selected browser as a list.</doc>
-<msg timestamp="20220914 10:46:42.280" level="INFO">${handles} = ['CDwindow-76BBC2A752E92F0181CB5BC86AF7187D', 'CDwindow-153DD82F6ED8FE0E5D374E21BA0A364A']</msg>
-<status status="PASS" starttime="20220914 10:46:42.276" endtime="20220914 10:46:42.280"/>
+<msg timestamp="20220914 11:16:30.321" level="INFO">${handles} = ['CDwindow-625C02DD05C228EA706EE3B47AD1B79D', 'CDwindow-254EE68E0CC8DA587892D8D725AC192A']</msg>
+<status status="PASS" starttime="20220914 11:16:30.318" endtime="20220914 11:16:30.321"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>${handles}[1]</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20220914 10:46:42.281" endtime="20220914 10:46:42.346"/>
+<status status="PASS" starttime="20220914 11:16:30.321" endtime="20220914 11:16:30.416"/>
 </kw>
 <kw name="Get Title" library="SeleniumLibrary">
 <var>${title}</var>
 <doc>Returns the title of the current page.</doc>
-<msg timestamp="20220914 10:46:45.853" level="INFO">${title} = realme Pad Mini 3 GB RAM 32 GB ROM 8.7 inch with Wi-Fi+4G Tablet (Blue) Price in India - Buy realme Pad Mini 3 GB RAM 32 GB ROM 8.7 inch with Wi-Fi+4G Tablet (Blue) Blue 32 Online - realme : Flipkart....</msg>
-<status status="PASS" starttime="20220914 10:46:42.346" endtime="20220914 10:46:45.853"/>
+<msg timestamp="20220914 11:16:32.988" level="INFO">${title} = realme Pad Mini 3 GB RAM 32 GB ROM 8.7 inch with Wi-Fi+4G Tablet (Blue) Price in India - Buy realme Pad Mini 3 GB RAM 32 GB ROM 8.7 inch with Wi-Fi+4G Tablet (Blue) Blue 32 Online - realme : Flipkart....</msg>
+<status status="PASS" starttime="20220914 11:16:30.416" endtime="20220914 11:16:32.988"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${title}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:45.853" endtime="20220914 10:46:45.854"/>
+<status status="PASS" starttime="20220914 11:16:32.988" endtime="20220914 11:16:32.989"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${prod1}</var>
 <arg>xpath=/html/body/div[1]/div/div[3]/div[1]/div[2]/div[2]/div/div[1]/h1/span</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:45.893" level="INFO">${prod1} = realme Pad Mini 3 GB RAM 32 GB ROM 8.7 inch with Wi-Fi+4G Tablet (Blue)</msg>
-<status status="PASS" starttime="20220914 10:46:45.854" endtime="20220914 10:46:45.893"/>
+<msg timestamp="20220914 11:16:33.015" level="INFO">${prod1} = realme Pad Mini 3 GB RAM 32 GB ROM 8.7 inch with Wi-Fi+4G Tablet (Blue)</msg>
+<status status="PASS" starttime="20220914 11:16:32.989" endtime="20220914 11:16:33.015"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${prod1}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:46:45.893" endtime="20220914 10:46:45.894"/>
+<status status="PASS" starttime="20220914 11:16:33.015" endtime="20220914 11:16:33.016"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>10s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220914 10:46:55.901" level="INFO">Slept 10 seconds</msg>
-<status status="PASS" starttime="20220914 10:46:45.894" endtime="20220914 10:46:55.901"/>
+<msg timestamp="20220914 11:16:43.027" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" starttime="20220914 11:16:33.016" endtime="20220914 11:16:43.027"/>
 </kw>
 <kw name="Execute Javascript" library="SeleniumLibrary">
 <arg>window.scrollTo(0,1000)</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<msg timestamp="20220914 10:46:55.901" level="INFO">Executing JavaScript:
+<msg timestamp="20220914 11:16:43.028" level="INFO">Executing JavaScript:
 window.scrollTo(0,1000)
 Without any arguments.</msg>
-<status status="PASS" starttime="20220914 10:46:55.901" endtime="20220914 10:46:55.919"/>
+<status status="PASS" starttime="20220914 11:16:43.027" endtime="20220914 11:16:43.041"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220914 10:46:59.923" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20220914 10:46:55.920" endtime="20220914 10:46:59.924"/>
+<msg timestamp="20220914 11:16:47.053" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20220914 11:16:43.041" endtime="20220914 11:16:47.054"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${addtocart}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:46:59.925" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button'.</msg>
-<status status="PASS" starttime="20220914 10:46:59.924" endtime="20220914 10:47:00.021"/>
+<msg timestamp="20220914 11:16:47.056" level="INFO">Clicking element 'xpath=/html/body/div[1]/div/div[3]/div[1]/div[1]/div[2]/div/ul/li[1]/button'.</msg>
+<status status="PASS" starttime="20220914 11:16:47.054" endtime="20220914 11:16:47.150"/>
 </kw>
 <kw name="Get Window Handles" library="SeleniumLibrary">
 <var>${handles}</var>
 <doc>Returns all child window handles of the selected browser as a list.</doc>
-<msg timestamp="20220914 10:47:00.024" level="INFO">${handles} = ['CDwindow-76BBC2A752E92F0181CB5BC86AF7187D', 'CDwindow-153DD82F6ED8FE0E5D374E21BA0A364A']</msg>
-<status status="PASS" starttime="20220914 10:47:00.021" endtime="20220914 10:47:00.024"/>
+<msg timestamp="20220914 11:16:47.165" level="INFO">${handles} = ['CDwindow-625C02DD05C228EA706EE3B47AD1B79D', 'CDwindow-254EE68E0CC8DA587892D8D725AC192A']</msg>
+<status status="PASS" starttime="20220914 11:16:47.151" endtime="20220914 11:16:47.165"/>
 </kw>
 <kw name="Switch Window" library="SeleniumLibrary">
 <arg>${handles}[0]</arg>
 <doc>Switches to browser window matching ``locator``.</doc>
-<status status="PASS" starttime="20220914 10:47:00.024" endtime="20220914 10:47:00.048"/>
+<status status="PASS" starttime="20220914 11:16:47.165" endtime="20220914 11:16:47.208"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>4s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220914 10:47:04.050" level="INFO">Slept 4 seconds</msg>
-<status status="PASS" starttime="20220914 10:47:00.048" endtime="20220914 10:47:04.050"/>
+<msg timestamp="20220914 11:16:51.212" level="INFO">Slept 4 seconds</msg>
+<status status="PASS" starttime="20220914 11:16:47.209" endtime="20220914 11:16:51.212"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${cart}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:47:04.050" level="INFO">Clicking element 'xpath=//*[@id="container"]/div/div[1]/div[1]/div[2]/div[6]/div/div'.</msg>
-<status status="PASS" starttime="20220914 10:47:04.050" endtime="20220914 10:47:04.103"/>
+<msg timestamp="20220914 11:16:51.215" level="INFO">Clicking element 'xpath=//*[@id="container"]/div/div[1]/div[1]/div[2]/div[6]/div/div'.</msg>
+<status status="PASS" starttime="20220914 11:16:51.213" endtime="20220914 11:16:51.301"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>5s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220914 10:47:09.109" level="INFO">Slept 5 seconds</msg>
-<status status="PASS" starttime="20220914 10:47:04.103" endtime="20220914 10:47:09.109"/>
+<msg timestamp="20220914 11:16:56.306" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20220914 11:16:51.301" endtime="20220914 11:16:56.306"/>
 </kw>
 <kw name="Get Text" library="SeleniumLibrary">
 <var>${cart_mob}</var>
 <arg>xpath=/html/body/div[1]/div/div[2]/div/div/div[1]/div/div[3]/div/div[1]/div[1]/div[1]/a</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20220914 10:47:09.163" level="INFO">${cart_mob} = realme Pad Mini 3 GB RAM 32 GB ROM 8.7 inch with Wi-Fi+4G Tablet (Blue)</msg>
-<status status="PASS" starttime="20220914 10:47:09.110" endtime="20220914 10:47:09.163"/>
+<msg timestamp="20220914 11:16:56.330" level="INFO">${cart_mob} = realme Pad Mini 3 GB RAM 32 GB ROM 8.7 inch with Wi-Fi+4G Tablet (Blue)</msg>
+<status status="PASS" starttime="20220914 11:16:56.306" endtime="20220914 11:16:56.330"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${cart_mob}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:47:09.163" endtime="20220914 10:47:09.165"/>
+<status status="PASS" starttime="20220914 11:16:56.330" endtime="20220914 11:16:56.331"/>
 </kw>
 <if>
 <branch type="IF" condition="&quot;${prod1}&quot; == &quot;${cart_mob}&quot;">
 <kw name="Log To Console" library="BuiltIn">
 <arg>IT IS UR MOBILE</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20220914 10:47:09.165" endtime="20220914 10:47:09.167"/>
+<status status="PASS" starttime="20220914 11:16:56.332" endtime="20220914 11:16:56.332"/>
 </kw>
-<status status="PASS" starttime="20220914 10:47:09.165" endtime="20220914 10:47:09.167"/>
+<status status="PASS" starttime="20220914 11:16:56.331" endtime="20220914 11:16:56.332"/>
 </branch>
-<status status="PASS" starttime="20220914 10:47:09.165" endtime="20220914 10:47:09.167"/>
+<status status="PASS" starttime="20220914 11:16:56.331" endtime="20220914 11:16:56.332"/>
 </if>
-<status status="PASS" starttime="20220914 10:46:42.170" endtime="20220914 10:47:09.167"/>
+<status status="PASS" starttime="20220914 11:16:30.206" endtime="20220914 11:16:56.332"/>
 </kw>
-<status status="PASS" starttime="20220914 10:46:06.721" endtime="20220914 10:47:09.168"/>
+<status status="PASS" starttime="20220914 11:15:49.202" endtime="20220914 11:16:56.333"/>
 </test>
-<status status="PASS" starttime="20220914 10:46:06.395" endtime="20220914 10:47:09.171"/>
+<status status="PASS" starttime="20220914 11:15:48.935" endtime="20220914 11:16:56.334"/>
 </suite>
 <statistics>
 <total>
